@@ -1,0 +1,50 @@
+{
+  "blur_r1.0": {
+    "roc_auc": 0.9442132812499999,
+    "eer": 0.126875,
+    "skipped": 0,
+    "n_pairs": 3200
+  },
+  "blur_r2.0": {
+    "roc_auc": 0.9362148437500001,
+    "eer": 0.13,
+    "skipped": 0,
+    "n_pairs": 3200
+  },
+  "blur_r3.0": {
+    "roc_auc": 0.9231789062500001,
+    "eer": 0.14875000000000002,
+    "skipped": 0,
+    "n_pairs": 3200
+  },
+  "occlusion_1": {
+    "roc_auc": 0.7733234375,
+    "eer": 0.2921875,
+    "skipped": 0,
+    "n_pairs": 3200
+  },
+  "brightness_0.5": {
+    "roc_auc": 0.941864453125,
+    "eer": 0.12937500000000002,
+    "skipped": 0,
+    "n_pairs": 3200
+  },
+  "brightness_0.8": {
+    "roc_auc": 0.9458753906250001,
+    "eer": 0.12343750000000002,
+    "skipped": 0,
+    "n_pairs": 3200
+  },
+  "brightness_1.2": {
+    "roc_auc": 0.9464734375,
+    "eer": 0.12156249999999999,
+    "skipped": 0,
+    "n_pairs": 3200
+  },
+  "brightness_1.5": {
+    "roc_auc": 0.94477109375,
+    "eer": 0.12812500000000002,
+    "skipped": 0,
+    "n_pairs": 3200
+  }
+}

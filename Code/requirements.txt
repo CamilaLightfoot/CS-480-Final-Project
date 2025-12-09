@@ -1,0 +1,54 @@
+# Use python 3.11 if you want to download all of the libraries below.
+# Run `pip install -r requirements.txt` to install of these requirements.
+
+# Core deep learning frameworks
+# Run the following in python for fastest analysis if you have a GPU
+#   import torch
+#   print("cuda available:", torch.cuda.is_available())
+#   print("torch cuda version:", torch.version.cuda)
+
+# If you get the following:
+#   cuda available: False
+#   torch cuda version: None
+# Then run these commands:
+#   pip uninstall -y torch torchvision
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+torch
+torchvision
+
+# Scientific stack
+numpy
+scipy
+pillow
+matplotlib
+scikit-learn
+tqdm
+
+# Face detection + FaceNet helper
+facenet-pytorch
+
+# OpenCV (for RetinaFace / preprocessing)
+opencv-python
+
+# ArcFace + RetinaFace (InsightFace models)
+insightface
+onnxruntime-gpu
+
+# Visualization (optional but recommended)
+umap-learn
+seaborn
+
+# Make sure to get AdaFace's requirements; run these commands:
+#   cd external\AdaFace
+#   pip install -r requirements.txt
+#   cd ../..
+# Before cloning the AdaFace repo:
+#   git clone https://github.com/mk-minchul/AdaFace.git external\AdaFace
+
+# Finally, run check_install.py - instructions for how to run it are in the file.
+
+# This is how you run the code in this repo:
+#   python src/evaluate_verification.py --pairs_csv data/lfw_pairs.csv
+
+# This is how you run individual models in this repo:
+#   python src/evaluate_verification.py --pairs_csv data/lfw_pairs.csv --model <facenet/arcface/adaface> --device cuda
